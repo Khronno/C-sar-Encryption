@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* Estilo del control deslizante */
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 8px;  
+    background-color: #E5E7EB; /* Color de fondo del control deslizante */
+    outline: none;
+  }
+  
+  /* Estilo del puntero */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background-color: #6B7280; /* Color del puntero */
+    cursor: pointer;
+  }
+  
+  /* Estilo del puntero en Firefox */
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #6B7280; /* Color del puntero */
+    cursor: pointer;
+  }
